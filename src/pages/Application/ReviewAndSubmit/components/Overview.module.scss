@@ -1,0 +1,18 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.overview {
+  @include section();
+
+  .heading {
+    @include majorTitle();
+    line-height: 24px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-base-dark;
+  }
+}

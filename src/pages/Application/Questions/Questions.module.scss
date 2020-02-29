@@ -1,0 +1,12 @@
+@import '../../../styles/_global.scss';
+
+.questionsPage {
+  margin-bottom: 32px;
+
+  @include respond-to('xs-l') {
+    .inputCard {
+      padding-top: 0px;
+      border: none;
+    }
+  }
+}

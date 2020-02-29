@@ -1,0 +1,17 @@
+.profileWrapper {
+  &:global(.ant-row-flex) {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+
+  .email {
+    display: block;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../../styles/global.scss';
+
+.overview {
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  .overviewSection {
+    flex-direction: column;
+    margin-bottom: 0px;
+
+    .title {
+      padding: 12px 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: $color-base-dark;
+      line-height: 24px;
+    }
+  }
+
+  @include respond-to('xs-l') {
+    .inputCard {
+      border: none;
+      padding: 0px;
+    }
+
+    .title {
+      margin-left: 8px;
+    }
+  }
+}

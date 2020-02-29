@@ -1,0 +1,36 @@
+@import '../../../styles/global';
+
+.card {
+  text-align: center;
+  padding: 64px 32px;
+  border-radius: 8px;
+  border: 1px solid $color-lighter-dark;
+
+  @include respond-to('xs-l') {
+    border: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .body {
+    margin: 8px 0 32px;
+
+    .bodyText {
+      line-height: 24px;
+    }
+  }
+
+  .header {
+    line-height: 36px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  color: $color-base-dark;
+}
+
+.text {
+  color: $color-base-dark-gray;
+}

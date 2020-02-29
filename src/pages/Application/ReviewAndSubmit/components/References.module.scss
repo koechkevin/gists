@@ -1,0 +1,19 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.references {
+  @include section();
+
+  .item {
+    @include contentPadding();
+    @include ellipsis-overflow();
+    @include majorTitle();
+
+    .header {
+      margin-bottom: 8px;
+    }
+
+    .contact {
+      @include lightText();
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/_global.scss';
+
+.card {
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+
+  @include respond-to('xs-l') {
+    padding: 0;
+    border: none;
+    margin-bottom: 72px;
+  }
+}

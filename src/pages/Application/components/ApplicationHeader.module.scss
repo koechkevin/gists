@@ -1,0 +1,55 @@
+@import '../../../styles/global';
+
+.header {
+  padding: 16px 0;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: $color-white;
+  transition: all 0.2s;
+
+  @include respond-to('sm') {
+    position: fixed;
+    padding: 0 16px;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    height: 64px;
+    border-bottom: 1px solid $color-black-lighter;
+  }
+
+  @include respond-to('xs-l') {
+    width: 100%;
+    left: 0;
+  }
+
+  .title {
+    flex: 1 auto;
+    margin-right: 8px;
+    color: $color-base-dark;
+    @include ellipsis;
+
+    @include respond-to('sm') {
+      margin: 0 8px;
+    }
+  }
+
+  .closeBtn {
+    margin-left: 8px;
+    display: none;
+
+    @include respond-to('sm') {
+      display: inline-flex;
+      margin-right: -8px;
+    }
+  }
+
+  .menuIcon {
+    display: none;
+
+    @include respond-to('sm') {
+      display: block;
+    }
+  }
+}

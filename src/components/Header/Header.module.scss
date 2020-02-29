@@ -1,0 +1,65 @@
+@import '../../styles/_global.scss';
+
+$height: 64px;
+
+.header {
+  .wrapper {
+    height: $height;
+  }
+
+  :global(.ant-row-flex) {
+    overflow: hidden;
+    flex-wrap: nowrap;
+  }
+
+  .titleContainer {
+    @include display-flex;
+    @include align-items(center);
+
+    @include respond-to('sm') {
+      @include ellipsis;
+    }
+
+    .title {
+      display: inline-block;
+      font-weight: bold;
+      color: $color-base-dark;
+      @include ellipsis;
+
+      @include respond-to('xs-l') {
+        max-width: 120px;
+      }
+    }
+  }
+}
+
+.statusTag {
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.moreIcon {
+  background-color: $color-basic-light-gray;
+}
+
+.avatar {
+  height: 32px;
+  margin-left: 12px;
+  cursor: pointer;
+  line-height: 0;
+}
+
+.optionButton {
+  margin-right: 12px;
+
+  &:global(.ant-btn-primary) {
+    color: $color-primary !important;
+    background-color: $color-primary-light !important;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $color-primary-light;
+    }
+  }
+}

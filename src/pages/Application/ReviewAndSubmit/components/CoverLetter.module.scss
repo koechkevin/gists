@@ -1,0 +1,9 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.coverLetter {
+  @include section();
+
+  a {
+    color: $color-base-dark-gray;
+  }
+}

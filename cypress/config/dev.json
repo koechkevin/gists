@@ -1,0 +1,23 @@
+{
+  "env": {
+    "company_url": "http://company-1.hr.dev.aurora.app",
+    "company_admin": "ben.liu@aurora.app",
+    "company_admin_password": "Auror@2019",
+    "company_admin_name": "Ben Liu",
+    "company_2_admin": "emery.muhozi@aurora.app",
+    "company_2_admin_password": "Auror@2019",
+    "company_2_admin_new_password": "Auror@2019_new",
+    "company_2_admin_name": "Emery Muhozi",
+    "candidate_url": "http://jobs.dev.aurora.app",
+    "candidate_user": "chacha.zhou@aurora.app",
+    "candidate_password": "Auror@2019",
+    "candidate_user_name": "Chacha Zhou",
+    "candidate_2_user": "morshed.candidate@aurora.app",
+    "candidate_2_password": "Auror@2019",
+    "candidate_2_user_name": "Morshed Candidate",
+    "aurora_api_url": "https://api.dev.aurora.app/v1",
+    "chat_api_url": "https://chat-api.dev.aurora.app/v1",
+    "aurora_admin": "anna.test@aurora.app",
+    "aurora_admin_password": "Auror@2019"
+  }
+}

@@ -1,0 +1,25 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.educationHistory {
+  @include section();
+  @include contentPadding();
+
+  .education {
+    .school {
+      @include minorSection();
+      @include majorTitle();
+      color: $color-base-dark;
+    }
+
+    .degree {
+      @include lightText();
+      color: $color-base-dark;
+      margin-bottom: 8px;
+    }
+
+    .date {
+      @include lightText();
+      margin-bottom: 16px;
+    }
+  }
+}

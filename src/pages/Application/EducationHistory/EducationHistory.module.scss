@@ -1,0 +1,28 @@
+@import '../../../styles/global.scss';
+
+.educationHistory {
+  background-color: $color-white;
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+.stillStudying {
+  margin-top: 16px;
+  font-size: 16px;
+
+  :global(.ant-checkbox + span) {
+    font-size: 16px;
+  }
+}
+
+.inputCard {
+  margin-bottom: 24px;
+}
+
+:global(.ant-checkbox-wrapper) {
+  @include respond-to('xs-l') {
+    width: 200px;
+  }
+}

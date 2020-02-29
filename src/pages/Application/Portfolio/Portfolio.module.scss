@@ -1,0 +1,10 @@
+@import '../../../styles/_global.scss';
+
+.portfolioPage {
+  @include respond-to('xs-l') {
+    .inputCard {
+      border: none;
+      padding-top: 0px;
+    }
+  }
+}

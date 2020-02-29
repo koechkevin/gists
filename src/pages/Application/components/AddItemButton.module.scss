@@ -1,0 +1,18 @@
+@import '../../../styles/global';
+
+.addButton {
+  @mixin commonStyles {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .label {
+    @include commonStyles();
+  }
+
+  .plusIcon {
+    @include commonStyles();
+  }
+}

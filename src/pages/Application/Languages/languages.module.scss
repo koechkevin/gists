@@ -1,0 +1,13 @@
+@import '../../../styles/_global.scss';
+
+.inputCard {
+  margin-bottom: 24px;
+
+  :global(.ant-form-item-label) {
+    pointer-events: none;
+  }
+}
+
+.select {
+  color: $color-base-dark;
+}

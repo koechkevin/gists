@@ -1,0 +1,38 @@
+image: cypress/browsers:node12.6.0-chrome75
+options:
+  max-time: 15
+
+e2e: &e2e
+  name: Install dependencies, build static app, run E2E tests
+  caches:
+    - npm
+    - cypress
+    - node
+    - yarn
+  script:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" >> $HOME/.npmrc
+    - yarn install
+    - export CI=false
+    - yarn run build:dev
+    - yarn run jest
+    - yarn run e2e:ci:smoke:local
+  artifacts:
+    # Store any generates images and videos as artifacts.
+    - cypress/screenshots/**
+    - cypress/videos/**
+
+pipelines:
+  branches:
+    # Run e2e tests for master and release/* branches only.
+    master:
+      - step:
+          <<: *e2e
+    release/*:
+      - step:
+          <<: *e2e
+
+definitions:
+  caches:
+    npm: $HOME/.npm
+    cypress: $HOME/.cache/Cypress
+    yarn: /usr/local/share/.cache/yarn

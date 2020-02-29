@@ -1,0 +1,13 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.languages {
+  @include section();
+  @include contentPadding();
+
+  .language {
+    .item {
+      @include majorTitle();
+      margin-top: 8px;
+    }
+  }
+}

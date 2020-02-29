@@ -1,0 +1,9 @@
+@import '../../../styles/global';
+
+.baseMenu {
+  margin-bottom: 32px;
+
+  @include respond-to('xs-l') {
+    margin-bottom: 88px;
+  }
+}

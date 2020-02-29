@@ -1,0 +1,22 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.questions {
+  @include section();
+
+  .question {
+    @include contentPadding();
+
+    .answer {
+      padding-top: 8px;
+      @include lightText();
+
+      a {
+        color: $color-base-dark-gray;
+      }
+    }
+  }
+}
+
+.minorTitle {
+  @include majorTitle();
+}

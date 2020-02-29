@@ -1,0 +1,19 @@
+@import '../../../styles/_global.scss';
+
+.header {
+  padding: 16px;
+
+  @include respond-to('xs-l') {
+    padding: 0;
+  }
+}
+
+.number {
+  :global(.ant-input) {
+    padding-right: 8px;
+  }
+}
+
+.inputCard {
+  margin-bottom: 24px;
+}

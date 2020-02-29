@@ -1,0 +1,106 @@
+@import '../../../styles/_global.scss';
+
+.container {
+  margin-bottom: 48px;
+
+  @include respond-to('md-large') {
+    max-width: 1024px;
+  }
+}
+
+.surveyPage {
+  font-size: 16px;
+
+  .title {
+    margin: 25px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-base-dark;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .test {
+    padding: 32px;
+  }
+
+  .genderGroup,
+  .raceGroup,
+  .veteranGroup,
+  .disabledGroup {
+    min-height: 134px;
+    margin-top: 20px;
+
+    .genderButtonGroup {
+      display: flex;
+    }
+  }
+
+  :global {
+    .ant-radio,
+    .ant-radio-wrapper {
+      white-space: normal;
+    }
+
+    .ant-radio {
+      padding-right: 6px;
+      padding-left: 2px;
+    }
+
+    .ant-radio-wrapper {
+      white-space: normal;
+    }
+
+    .ant-radio-inner {
+      top: 4px;
+    }
+  }
+
+  .radioButton {
+    display: flex;
+    margin-top: 20px;
+
+    :global .ant-radio-checked::after {
+      border: none;
+    }
+  }
+
+  @include respond-to('min-md-large') {
+    .introText,
+    .genderGroup,
+    .veteranGroup,
+    .disabledGroup,
+    .raceGroup {
+      padding: 16px;
+    }
+
+    .inputCard {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include respond-to('md-large') {
+    .inputCard {
+      margin-bottom: 32px;
+    }
+  }
+
+  @include respond-to('xs-l') {
+    .inputCard {
+      border: none;
+      margin-bottom: 0px;
+    }
+  }
+
+  :global {
+    span.ant-radio + * {
+      font-size: 16px;
+    }
+  }
+}

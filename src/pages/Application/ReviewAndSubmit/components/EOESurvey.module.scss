@@ -1,0 +1,13 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.eoeSurvey {
+  @include section();
+
+  .item {
+    @include contentPadding();
+
+    .minorTitle {
+      @include majorTitle();
+    }
+  }
+}

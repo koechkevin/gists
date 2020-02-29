@@ -1,0 +1,18 @@
+@import '../../styles/_global.scss';
+
+.sideBar {
+  :global(.ant-layout-sider-children) {
+    min-width: 200px;
+    overflow-x: hidden;
+  }
+
+  .content {
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    @include respond-to('xs-l') {
+      height: calc(100vh - 88px);
+    }
+  }
+}

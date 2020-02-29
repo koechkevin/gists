@@ -1,0 +1,5 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.securityClearance {
+  @include securitySection();
+}

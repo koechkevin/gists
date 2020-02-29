@@ -1,0 +1,11 @@
+{
+  "reporter": "./node_modules/mochawesome/src/mochawesome.js",
+  "reporterOptions": {
+    "reportDir": "cypress/reports/separate-reports",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
+  "defaultCommandTimeout": 8000,
+  "projectId": "sduj45"
+}

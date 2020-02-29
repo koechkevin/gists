@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.64" height="18" viewBox="0 0 17.64 18">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#3e82f1}.cls-4{clip-path:url(#clip-path-2)}.cls-5{fill:#32a753}.cls-6{clip-path:url(#clip-path-3)}.cls-7{fill:#f9bb00}.cls-8{clip-path:url(#clip-path-4)}.cls-9{fill:#e74133}
+        </style>
+        <clipPath id="clip-path">
+            <path id="Intersection_6" d="M804.048 607.82v-2.259a4.14 4.14 0 0 0 1.8-2.716H801v-3.481h8.476a10.266 10.266 0 0 1 .164 1.841 8.781 8.781 0 0 1-2.684 6.615z" class="cls-1" data-name="Intersection 6"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+            <path id="Intersection_9" d="M792.957 605.042v-2.332h3.007a5.432 5.432 0 0 0 8.085 2.851l2.908 2.259A8.6 8.6 0 0 1 801 610a9 9 0 0 1-8.043-4.958z" class="cls-1" data-name="Intersection 9"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+            <path id="Intersection_12" d="M792 601a9.011 9.011 0 0 1 .957-4.042h3.007v2.332a5.331 5.331 0 0 0 0 3.42l-3.007 2.332A9.013 9.013 0 0 1 792 601z" class="cls-1" data-name="Intersection 12"/>
+        </clipPath>
+        <clipPath id="clip-path-4">
+            <path id="Intersection_15" d="M792.957 596.958A9 9 0 0 1 801 592a8.651 8.651 0 0 1 6.022 2.344l-2.582 2.581a4.861 4.861 0 0 0-3.44-1.345 5.364 5.364 0 0 0-5.036 3.71z" class="cls-1" data-name="Intersection 15"/>
+        </clipPath>
+    </defs>
+    <g id="Logo_Google" data-name="Logo Google" transform="translate(-792 -592)">
+        <g id="Group_2270" data-name="Group 2270">
+            <g id="Group_2269" class="cls-2" data-name="Group 2269">
+                <path id="Rectangle_5929" d="M0 0h18.64v18.456H0z" class="cls-3" data-name="Rectangle 5929" transform="translate(796 594.364)"/>
+            </g>
+        </g>
+        <g id="Group_2272" data-name="Group 2272">
+            <g id="Group_2271" class="cls-4" data-name="Group 2271">
+                <path id="Rectangle_5932" d="M0 0h23.999v17.29H0z" class="cls-5" data-name="Rectangle 5932" transform="translate(787.957 597.71)"/>
+            </g>
+        </g>
+        <g id="Group_2274" data-name="Group 2274">
+            <g id="Group_2273" class="cls-6" data-name="Group 2273">
+                <path id="Rectangle_5935" d="M0 0h13.964v18.084H0z" class="cls-7" data-name="Rectangle 5935" transform="translate(787 591.958)"/>
+            </g>
+        </g>
+        <g id="Group_2276" data-name="Group 2276">
+            <g id="Group_2275" class="cls-8" data-name="Group 2275">
+                <path id="Rectangle_5938" d="M0 0h24.065v17.29H0z" class="cls-9" data-name="Rectangle 5938" transform="translate(787.957 587)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,59 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+@mixin publication-section {
+  margin-top: 8px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  @include lightText();
+}
+
+.accomplishments {
+  @include section();
+
+  .accomplishment {
+    @include contentPadding();
+
+    .heading {
+      @include majorTitle();
+      line-height: 24px;
+    }
+
+    .item {
+      line-height: 24px;
+      margin-top: 8px;
+      @include lightText();
+    }
+
+    .lightTitle {
+      line-height: 24px;
+      margin-top: 8px;
+      @include lightText();
+      color: $color-base-dark;
+    }
+
+    .serial {
+      @include publication-section();
+      margin-bottom: 16px;
+    }
+
+    .event {
+      @include majorTitle();
+      margin-top: 8px;
+    }
+
+    .type {
+      @include lightText();
+      margin-top: 8px;
+    }
+
+    .description {
+      font-size: 16px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+    }
+
+    .space {
+      margin-top: 16px;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+@import '../../../../styles/_global.scss';
+
+.textItem,
+.messageItem,
+.privateMessageItem {
+  display: block;
+  padding: 8px 32px;
+  position: relative;
+
+  @include respond-to('sm') {
+    padding: 0;
+  }
+
+  &:hover {
+    background: $color-gray-light;
+  }
+
+  :global(.ant-list-item-meta-description) {
+    font-size: 13px;
+    line-height: 18px;
+    color: $color-base-dark;
+  }
+
+  .name {
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    font-family: "OpenSans-Bold";
+    font-size: 14px;
+    font-weight: bold;
+    color: $color-font-darker;
+  }
+
+  .createdAt {
+    display: inline-block;
+    margin-left: 10px;
+    height: 21px;
+    line-height: 21px;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    color: $color-base-gray-dark;
+  }
+
+  .text {
+    margin-top: 10px;
+    font-family: "OpenSans-Regular";
+    font-size: 14px;
+    font-weight: normal;
+    color: $color-base-dark;
+    word-break: break-word;
+
+    a {
+      display: inline-block;
+      font-family: OpenSans-Regular;
+      font-size: 14px;
+      font-weight: normal;
+    }
+  }
+
+  :global {
+    .ant-list-item-meta-title {
+      margin-bottom: 0;
+    }
+  }
+
+  .replies {
+    display: flex;
+    margin-top: 18px;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+      .timestamp {
+        display: none;
+      }
+
+      .indicator {
+        display: inline-block;
+      }
+    }
+
+    .count {
+      padding: 0 5px 0 10px;
+      font-family: "penSans-Semibold";
+      font-size: 12px;
+      font-weight: bold;
+      color: $color-primary;
+    }
+
+    .timestamp {
+      padding-left: 6px;
+      font-size: 12px;
+      color: $color-base-gray-dark;
+    }
+
+    .indicator {
+      display: none;
+      padding-left: 6px;
+      font-size: 12px;
+      color: $color-base-gray-dark;
+
+      svg {
+        margin-left: 5px;
+      }
+    }
+
+    :global {
+      .ant-avatar-circle {
+        margin-right: 5px;
+      }
+
+      .ant-list-item-meta-title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.privateMessageItem {
+  padding: 10px;
+  margin-bottom: 12px;
+  background-color: rgba($color: $color-primary, $alpha: 0.05);
+
+  :global(.ant-btn) {
+    font-size: 12px;
+    height: 28px;
+    color: $color-primary;
+  }
+
+  :global(.ant-btn-ghost) {
+    border-color: $color-primary;
+  }
+
+  .logo {
+    text-align: center;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+
+    >img {
+      display: inline-block;
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  .private {
+    font-size: 12px;
+    color: #C0C1C3;
+    margin-bottom: 8px;
+  }
+
+  .buttonGroup {
+    margin-top: 12px;
+    padding: 8px 50px 10px;
+  }
+}
+
+.messageItem {
+  @include respond-to('sm') {
+    :global(.ant-list-item-meta) {
+      padding: 5px 16px;
+    }
+  }
+}
+
+.textItem {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  @include display-flex;
+  flex-direction: column;
+  @include justify-content(flex-start);
+  @include align-items(flex-start);
+
+  @include respond-to('sm') {
+    margin-bottom: 10px;
+    padding: 0;
+
+    :global(.ant-list-item-meta) {
+      padding: 2px 0 2px 5px;
+    }
+  }
+
+  .text {
+    margin-top: 0;
+  }
+
+  .timestamp {
+    visibility: hidden;
+    min-width: 59px;
+    display: inline-block;
+    font-size: 12px;
+    color: $color-base-gray-dark;
+  }
+
+  &:hover {
+    .timestamp {
+      visibility: visible;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import '../../styles/global';
+
+:global(.ant-modal-mask) {
+  background-color: rgba($color: $color-black, $alpha: 0.6);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  overflow-y: auto;
+  height: calc(100vh - 64px);
+
+  .main {
+    height: 100%;
+    flex: 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 32px;
+    background-color: $color-white;
+
+    @include respond-to('md-large') {
+      padding: 0 24px;
+    }
+
+    @include respond-to('sm') {
+      padding: 16px 16px 0;
+    }
+  }
+
+  .sideNav {
+    &:global(.ant-layout-sider-dark) {
+      background-color: $color-dark-gray;
+    }
+
+    .ant-layout-sider-children {
+      background-color: $color-dark-gray;
+    }
+  }
+}

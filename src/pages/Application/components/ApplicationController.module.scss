@@ -1,0 +1,16 @@
+@import '../../../styles/global';
+
+.applicationController {
+  font-size: 16px;
+  flex-wrap: nowrap;
+  margin: 32px 0;
+  color: $color-base-dark-gray;
+
+  @include respond-to('xs-l') {
+    margin-bottom: 132px;
+  }
+
+  :global(.ant-col) {
+    @include flex-center-vertical;
+  }
+}

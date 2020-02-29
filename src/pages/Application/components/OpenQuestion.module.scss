@@ -1,0 +1,37 @@
+@import '../../../styles/global';
+
+.openQuestion {
+  margin-bottom: -8px;
+
+  .title {
+    min-height: 48px;
+    color: $color-base-dark;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 12px;
+
+    .content {
+      flex-wrap: nowrap;
+    }
+  }
+
+  @include respond-to('xs-l') {
+    .title {
+      min-height: 48px;
+
+      .content {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.requiredLabel {
+  height: 32px;
+  background: $color-basic-light-gray;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  color: $color-base-dark-gray;
+}

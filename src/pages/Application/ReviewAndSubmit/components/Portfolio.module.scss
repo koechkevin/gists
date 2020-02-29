@@ -1,0 +1,21 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.portfolio {
+  @include section();
+  @include contentPadding();
+  @include majorTitle();
+}
+
+.item {
+  flex-wrap: nowrap;
+  @include ellipsis;
+}
+
+.text {
+  margin-top: 4px;
+  @include ellipsis;
+}
+
+.icon {
+  padding-right: 0px;
+}

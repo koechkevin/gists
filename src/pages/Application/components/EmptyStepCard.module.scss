@@ -1,0 +1,17 @@
+@import '../../../styles/global';
+
+.emptyCard {
+  margin-top: 32px;
+
+  @include respond-to('xs-l') {
+    margin: 0;
+  }
+
+  .skip {
+    margin-top: 16px;
+
+    &:global(.ant-btn-link) {
+      color: $color-primary;
+    }
+  }
+}

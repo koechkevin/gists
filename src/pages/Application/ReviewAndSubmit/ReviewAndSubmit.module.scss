@@ -1,0 +1,107 @@
+@import '../../../styles/_global.scss';
+
+@mixin majorTitle {
+  color: $color-black-light;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+@mixin blueTitle {
+  @include majorTitle();
+  color: $color-primary;
+}
+
+@mixin contentPadding {
+  padding-top: 16px;
+
+  @include respond-to('xs-l') {
+    padding-top: 8px;
+  }
+}
+
+@mixin lightText {
+  font-size: 16px;
+  color: $color-base-dark-gray;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+@mixin section {
+  font-size: 16px;
+  padding-left: 24px;
+  padding-right: 8px;
+  border-radius: 8px;
+
+  @include respond-to('xs-l') {
+    padding-left: 0px;
+  }
+}
+
+@mixin ellipsis-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin vertical-text-overflow {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin minorSection {
+  @include majorTitle();
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@mixin securitySection {
+  @include section();
+  @include contentPadding();
+
+  .item {
+    margin-bottom: 8px;
+    @include lightText();
+  }
+}
+
+.reviewAndSubmit {
+  justify-content: space-between;
+  padding-bottom: 16px;
+
+  @include respond-to('xs-l') {
+    margin-bottom: 132px;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid $color-lighter-gray;
+  }
+}
+
+.withdrawText {
+  &:global(.ant-btn) {
+    color: $color-primary;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+}
+
+.banner {
+  padding: 32px 0;
+}
+
+.customizedText {
+  height: 48px;
+  line-height: 24px;
+  color: $color-base-dark-gray;
+
+  @include respond-to('sm') {
+    margin-bottom: 72px;
+  }
+}

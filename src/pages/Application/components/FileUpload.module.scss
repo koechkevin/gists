@@ -1,0 +1,61 @@
+@import '../../../styles/global';
+
+.fileUpload {
+  text-align: center;
+
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 8px;
+    line-height: 32px;
+  }
+
+  .desc {
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  .files {
+    margin: 32px auto;
+    max-width: 480px;
+  }
+}
+
+.uploadArea {
+  overflow: hidden;
+  background-color: $color-white;
+  border: 1px solid $color-lighter-dark;
+
+  &:global(.ant-upload.ant-upload-drag) {
+    cursor: default;
+    border-style: solid;
+    border-radius: 8px;
+    background-color: $color-white;
+
+    &:not(.ant-upload-disabled):hover {
+      border-color: $color-primary;
+    }
+
+    :global(.ant-upload-drag-container) {
+      padding: 64px 32px;
+    }
+
+    @include respond-to('xs-l') {
+      border: none;
+    }
+  }
+
+  .uploadIcon {
+    color: $color-white;
+    margin-left: -8px;
+  }
+}
+
+.link {
+  display: block;
+  margin: 0 auto;
+
+  &:global(.ant-btn) {
+    color: $color-primary;
+  }
+}

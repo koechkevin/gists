@@ -1,0 +1,14 @@
+@import '../../../styles/_global';
+@import './PasswordsForm.module.scss';
+
+.login {
+  &:global(.ant-typography) {
+    font-weight: 600;
+  }
+}
+
+.form {
+  :global(.ant-form-explain) {
+    text-align: left;
+  }
+}

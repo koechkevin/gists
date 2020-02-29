@@ -1,0 +1,46 @@
+@import '../../../styles/global';
+
+.closedQuestion {
+  color: $color-base-dark;
+  font-weight: 600;
+  font-size: 16px;
+  flex-wrap: nowrap;
+  margin-bottom: 8px;
+
+  .title {
+    flex-wrap: nowrap;
+  }
+
+  @include respond-to('xs-l') {
+    border-bottom: 1px solid $color-base-gray;
+    padding-bottom: 16px;
+
+    .title {
+      flex-direction: column;
+    }
+  }
+
+  .question {
+    height: 48px;
+    height: 48px;
+    padding-top: 12px;
+  }
+
+  .answer {
+    padding-left: 16px;
+    height: 48px;
+    height: 48px;
+    padding-top: 12px;
+  }
+}
+
+.label {
+  width: 69px;
+  height: 32px;
+  background: $color-basic-light-gray;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  color: $color-base-dark-gray;
+}

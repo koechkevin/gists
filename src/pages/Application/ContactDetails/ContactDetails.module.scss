@@ -1,0 +1,48 @@
+@import '../../../styles/_global.scss';
+
+.card {
+  @include respond-to('xs-l') {
+    padding: 0;
+    border: none;
+  }
+}
+
+.address {
+  :global(.ant-typography) {
+    font-size: 16px;
+    padding: 13px 8px;
+    font-weight: bold;
+    color: $color-base-dark;
+    margin-bottom: 16px;
+  }
+
+  .inputRow {
+    flex-direction: row-reverse;
+  }
+}
+
+.phoneAndEmail {
+  h4 {
+    font-weight: 600;
+    font-size: 16px;
+    color: $color-base-dark;
+    padding: 16px 8px;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+
+  .prefix {
+    width: 69px;
+    margin-right: 8px;
+  }
+
+  .number {
+    width: calc(100% - 77px);
+  }
+
+  .input {
+    :global(.ant-input) {
+      padding-right: 8px;
+    }
+  }
+}

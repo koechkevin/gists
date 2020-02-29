@@ -1,0 +1,48 @@
+@import '../../../styles/_global';
+
+.layout {
+  position: relative;
+  margin: auto;
+  height: 100vh;
+  min-height: 800px;
+
+  @include respond-to('xs-l') {
+    height: 96vh;
+    min-height: 624px;
+  }
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+  white-space: nowrap;
+
+  @include respond-to('sm') {
+    bottom: 40px;
+  }
+}
+
+.content {
+  width: 448px;
+  margin-top: 32px;
+
+  @include respond-to('xs-l') {
+    width: 100%;
+    margin: 32px 24px;
+  }
+}
+
+.header {
+  margin-top: 17vh;
+
+  @include respond-to('xs-l') {
+    margin-top: 40px;
+    margin-left: 24px;
+
+    .logo {
+      justify-content: flex-start;
+    }
+  }
+}

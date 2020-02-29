@@ -1,0 +1,16 @@
+.buttonGroup {
+  min-width: 312px;
+
+  :global(.ant-btn) {
+    font-size: 13px;
+    color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      padding-left: 4px;
+    }
+  }
+}

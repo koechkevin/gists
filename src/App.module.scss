@@ -1,0 +1,11 @@
+@import './styles/_global.scss';
+
+.app {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+  overflow: hidden;
+  background-color: $color-white;
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/_global.scss';
+
+.formContent {
+  padding: 0;
+  margin-top: 16%;
+  @include respond-to('xs-l') {
+    margin-top: 24px;
+  }
+
+  .text {
+    display: block;
+    margin-bottom: 32px;
+
+    a {
+      color: $color-primary;
+      font-weight: 600;
+      user-select: none;
+    }
+  }
+}

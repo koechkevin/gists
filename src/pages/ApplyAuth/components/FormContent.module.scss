@@ -1,0 +1,255 @@
+@import '../../../styles/_global.scss';
+
+.titleContainer {
+  font-size: 24px;
+  display: flex;
+  font-weight: 600;
+  margin-top: 20px;
+  justify-content: center;
+
+  h3 {
+    color: $color-base-gray-dark;
+  }
+
+  @include respond-to('xs-l') {
+    justify-content: flex-start;
+    padding-left: 24px;
+  }
+}
+
+.formDescription {
+  @include display-flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 16px;
+
+  .codeLink {
+    margin-top: 24px;
+    a {
+      font-weight: 600;
+      color: $color-primary;
+    }
+  }
+
+  @include respond-to('xs-l') {
+    text-align: left;
+    padding: 0 24px;
+  }
+
+  :global {
+    .ant-typography {
+      color: $color-base-gray-dark;
+    }
+  }
+}
+
+.button {
+  &:global([ant-click-animating-without-extra-node]:after) {
+    animation: 0s;
+  }
+}
+
+.formContent {
+  padding: 20px 30px 30px;
+  max-width: 508px;
+  margin: auto;
+
+  @include respond-to('xs-l') {
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+  }
+
+  :global {
+    .ant-form-item:last-child {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    @include respond-to('xs-l') {
+      .ant-form-item-label {
+        width: max-content;
+      }
+    }
+    .ant-col.ant-form-item-label {
+      max-width: max-content;
+    }
+
+    .ant-btn[disabled] {
+      border: none;
+      background-color: rgba($color: $color-primary, $alpha: 0.2) !important;
+      color: $color-white;
+    }
+
+    label {
+      cursor: pointer;
+    }
+
+    #verificationCode.ant-input {
+      letter-spacing: 5px;
+    }
+
+    .ant-btn {
+      margin-top: 18px;
+      font-weight: 600;
+      height: 40px;
+      border: 1px solid $color-primary;
+      border-radius: 8px;
+      background-color: $color-primary;
+    }
+
+    .ant-btn:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+
+  .forgetLink {
+    font-size: 14px;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+.inactiveIcon {
+  :global {
+    .ant-typography {
+      color: $color-base-gray-dark;
+    }
+  }
+  svg {
+    color: $color-base-gray-light;
+  }
+}
+
+.activeIcon {
+  :global {
+    .ant-typography {
+      color: $color-success;
+    }
+  }
+  color: $color-success;
+}
+
+.validationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.validationItem {
+  display: flex;
+  font-size: 12px;
+
+  height: 32px;
+  svg {
+    height: 16px;
+    width: 12px;
+    margin: 8px 10px;
+  }
+  :global {
+    .ant-typography {
+      margin-top: 7px;
+    }
+  }
+}
+
+.namesErrorText {
+  color: $color-error;
+  font-size: 12px;
+}
+
+.forgetPassword a {
+  font-weight: 600;
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.logoContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 40px 0;
+
+  @include respond-to('xs-l') {
+    justify-content: flex-start;
+    margin: 32px 0 32px 0;
+    padding-left: 24px;
+  }
+}
+
+.logoSection {
+  height: 50px;
+  width: 200px;
+  background: url('../../../assets/logoWithName.svg') no-repeat center;
+  background-size: 200px 50px;
+
+  @include respond-to('xs-l') {
+    background: url('../../../assets/logo.svg') no-repeat left;
+    height: 40px;
+    background-size: 40px 40px;
+  }
+}
+
+.headerContent {
+  height: 72px;
+}
+
+.headerInfo {
+  @include flex-center-vertical;
+  height: 64px;
+  padding-left: 16px;
+}
+
+.leftHeader {
+  @include flex-center-vertical;
+  flex-grow: 1;
+
+  .title {
+    font-weight: 600;
+    color: $color-base-dark;
+    margin-right: 8px;
+
+    @include respond-to('xs-l') {
+      width: 160px;
+    }
+  }
+
+  :global(.ant-tag) {
+    margin-left: 8px;
+  }
+}
+
+.headerText {
+  @include respond-to('xs-l') {
+    display: none;
+  }
+}
+
+.headerLink {
+  margin-left: 4px;
+  margin-right: 64px;
+  span {
+    font-weight: 600;
+    color: $color-primary;
+  }
+
+  @include respond-to('xs-l') {
+    margin-right: 16px;
+  }
+}
+
+.headerIcon {
+  margin-right: 8px;
+  cursor: pointer;
+
+  svg {
+    color: $color-dark-lighter;
+  }
+}

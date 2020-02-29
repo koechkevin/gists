@@ -1,0 +1,44 @@
+@import '../../styles/_global.scss';
+
+.root {
+  @include display-flex;
+  height: 100%;
+
+  @include respond-to('xs-l') {
+    height: calc(100vh - 64px);
+  }
+
+  .chat {
+    @include display-flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+
+    .chatContent {
+      flex: 1;
+      overflow: auto;
+      position: relative;
+      overflow-x: hidden;
+
+      @include respond-to('xs-l') {
+        position: fixed;
+        top: 64px;
+        bottom: 100px;
+        width: 100%;
+      }
+    }
+  }
+
+  .inputWrapper {
+    margin: 12px 32px;
+
+    @include respond-to('xs-l') {
+      margin: 0;
+      padding: 12px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: $color-white;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../../styles/global';
+
+.title {
+  display: flex;
+  padding: 16px 15px 15px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid $color-gray-regular;
+
+  .closeBtn {
+    cursor: pointer;
+    font-size: 18px;
+    color: $color-base-gray-dark;
+
+    &:active,
+    &:hover {
+      color: $color-base-dark;
+    }
+  }
+}
+
+.collapse {
+  :global {
+
+    .ant-collapse-item {
+      border-color: $color-gray-regular;
+    }
+
+    .ant-collapse-item-active .ant-collapse-header {
+      border-bottom: 1px solid $color-gray-regular;
+    }
+
+    .ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box {
+      padding-top: 16px;
+      font-size: 13px;
+    }
+  }
+}

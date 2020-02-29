@@ -1,0 +1,35 @@
+@import '../../../styles/global';
+
+.appSideBar {
+  width: 100%;
+  max-width: 376px;
+  min-width: 376px;
+  overflow-y: scroll;
+  padding: 24px 8px;
+  border-right: none;
+  background-color: $color-white;
+
+  @include respond-to('md-large') {
+    min-width: unset;
+    max-width: 320px;
+    height: calc(100vh - 64px);
+  }
+
+  @include respond-to('sm') {
+    border-right: none;
+    min-width: 320px;
+    max-width: unset;
+  }
+
+  .stepper {
+    @include respond-to('xs-l') {
+      margin-bottom: 88px;
+    }
+  }
+}
+
+@-moz-document url-prefix() {
+  .appSideBar {
+    padding-right: 16px;
+  }
+}

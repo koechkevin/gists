@@ -1,0 +1,25 @@
+@import '../../../styles/_global.scss';
+
+.stillWorking {
+  margin-top: 16px;
+  font-size: 16px;
+
+  :global(.ant-checkbox + span) {
+    font-size: 16px;
+  }
+}
+
+:global(.ant-checkbox-wrapper) {
+  @include respond-to('xs-l') {
+    width: 200px;
+  }
+}
+
+.companyCard {
+  margin-bottom: 24px;
+}
+
+.positionCard {
+  border-radius: 4px;
+  margin-top: 24px;
+}

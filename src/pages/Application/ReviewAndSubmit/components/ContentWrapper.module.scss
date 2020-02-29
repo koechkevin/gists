@@ -1,0 +1,53 @@
+@import '../../../../styles/_global.scss';
+
+.contentWrapper {
+  font-size: 16px;
+  background-color: $color-white;
+
+  &:global(.ant-collapse-borderless > .ant-collapse-item) {
+    border-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  :global(.ant-collapse-header) {
+    height: 48px;
+    &:hover {
+      background: $color-gray-light;
+    }
+  }
+}
+
+@include respond-to('xs-l') {
+  .contentWrapper {
+    &:global(.ant-collapse-borderless > .ant-collapse-item) {
+      padding-left: 0px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.buttonSection {
+  margin-top: 24px;
+  padding-left: 24px;
+
+  .content {
+    font-weight: 600;
+    font-size: 16px;
+
+    .icon {
+      height: 32px;
+      width: 32px;
+      padding-top: 4px;
+      margin-left: -4px;
+    }
+  }
+
+  @include respond-to('xs-l') {
+    padding-left: 0px;
+  }
+}
+
+.header {
+  margin-top: -4px;
+}

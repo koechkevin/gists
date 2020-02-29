@@ -1,0 +1,35 @@
+@import '../ReviewAndSubmit.module.scss', '../../../../styles/_global.scss';
+
+.workExperience {
+  @include section();
+
+  .experience {
+    @include contentPadding();
+
+    .position {
+      .jobTitle {
+        @include minorSection();
+        font-weight: normal;
+        color: $color-base-dark;
+      }
+
+      .duration {
+        @include lightText();
+        margin-bottom: 8px;
+      }
+
+      .description {
+        max-height: 24px;
+        @include lightText();
+        @include ellipsis-overflow();
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.companyName {
+  @include majorTitle();
+  color: $color-base-dark;
+  line-height: 24px;
+}
